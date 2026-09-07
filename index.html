@@ -5,32 +5,30 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>板中午餐系統 2.0｜下課鐘響前，午餐已經在等你</title>
 <meta name="description" content="板橋高中專屬訂餐 App。提前預訂、訂單全紀錄、介面超直覺，讓訂午餐只花 30 秒。">
-<link rel="canonical" href="https://dw-wen.github.io/personal_website/banzhong-lunch-landing.html">
+<link rel="canonical" href="https://dw-wen.github.io/pcsh_lunch_intro_website/">
 
 <!-- ============================================================
      社群分享預覽
-     ⚠️ 下面三個網址（canonical / og:url / og:image）必須是「絕對網址」，
-        爬蟲不吃相對路徑，也不吃內嵌的 data: 圖。
-        目前填的是 GitHub Pages 的預設推測值：
-          https://dw-wen.github.io/personal_website
-        若 repo 名稱不同、或你把檔案改名成 index.html，
-        請把本檔中所有 dw-wen.github.io/personal_website 一併換掉。
-        og-cover.jpg 要和這個 HTML 放在同一層目錄。
+     canonical / og:url / og:image 必須是「絕對網址」——
+     爬蟲不吃相對路徑，也不吃內嵌的 data: 圖。
+     正式網址：https://dw-wen.github.io/pcsh_lunch_intro_website/
+     ‧ 本檔在 repo 內必須命名為 index.html（網址結尾是 /）
+     ‧ og-cover.jpg 要和 index.html 放在同一層目錄
      ============================================================ -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="板中午餐系統 2.0">
 <meta property="og:locale" content="zh_TW">
-<meta property="og:url" content="https://dw-wen.github.io/personal_website/banzhong-lunch-landing.html">
+<meta property="og:url" content="https://dw-wen.github.io/pcsh_lunch_intro_website/">
 <meta property="og:title" content="板中午餐系統 2.0｜下課鐘響前，午餐已經在等你">
 <meta property="og:description" content="板橋高中專屬訂餐 App。提前預訂、訂單全紀錄、介面超直覺，讓訂午餐只花 30 秒。">
-<meta property="og:image" content="https://dw-wen.github.io/personal_website/og-cover.jpg">
+<meta property="og:image" content="https://dw-wen.github.io/pcsh_lunch_intro_website/og-cover.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="板中午餐系統 2.0 —— 下課鐘響前，你的午餐已經在等你">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="板中午餐系統 2.0｜下課鐘響前，午餐已經在等你">
 <meta name="twitter:description" content="板橋高中專屬訂餐 App。提前預訂、訂單全紀錄、介面超直覺，讓訂午餐只花 30 秒。">
-<meta name="twitter:image" content="https://dw-wen.github.io/personal_website/og-cover.jpg">
+<meta name="twitter:image" content="https://dw-wen.github.io/pcsh_lunch_intro_website/og-cover.jpg">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap">
 <link rel="icon" type="image/png" href="data:image/png;base64,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">
@@ -46,8 +44,8 @@
   "applicationCategory": "FoodApplication",
   "operatingSystem": "iOS 12.0 或以上, Android",
   "inLanguage": "zh-Hant-TW",
-  "url": "https://dw-wen.github.io/personal_website/banzhong-lunch-landing.html",
-  "image": "https://dw-wen.github.io/personal_website/og-cover.jpg",
+  "url": "https://dw-wen.github.io/pcsh_lunch_intro_website/",
+  "image": "https://dw-wen.github.io/pcsh_lunch_intro_website/og-cover.jpg",
   "author": { "@type": "Person", "name": "文柏鈞" },
   "publisher": { "@type": "Person", "name": "文柏鈞" },
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "TWD" },
@@ -273,7 +271,6 @@ p{ margin:0; }
 .badge:hover{ transform:translateY(-3px); filter:drop-shadow(0 12px 26px rgba(30,41,59,.32)); }
 .badge:active{ transform:translateY(0); }
 .badge:focus-visible{ outline:2px solid var(--teal); outline-offset:5px; }
-
 
 /* ============================================================
    3b. App 截圖
